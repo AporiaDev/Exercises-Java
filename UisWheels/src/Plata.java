@@ -1,11 +1,11 @@
 public class Plata extends Suscripcion{
 
     public Plata(String nombre,
-                 String apellido,
-                 double valueSuscription, Tipo plata) {
+                 double valueSuscription,
+                 Tipo tipo) {
 
-        super(nombre, apellido, valueSuscription);
-        this.tipo=plata;
+        super(nombre, valueSuscription);
+        this.tipo=tipo;
 
     }
 

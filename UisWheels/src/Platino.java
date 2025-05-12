@@ -1,11 +1,11 @@
 public class Platino extends Suscripcion{
 
     public Platino(String nombre,
-                   String apellido,
-                   double valueSuscription, Tipo platino) {
+                   double valueSuscription,
+                   Tipo tipo) {
 
-        super(nombre, apellido, valueSuscription);
-        this.tipo = platino;
+        super(nombre, valueSuscription);
+        this.tipo = tipo;
     }
 
     @Override

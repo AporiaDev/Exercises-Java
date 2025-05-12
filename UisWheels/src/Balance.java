@@ -17,13 +17,12 @@ public class Balance implements PatronBalance{
     @Override
     public void imprimirListaSuscripcion() {
         System.out.println("******Balance de" + nombreMes + "******");
-        for (int i = 0; i < suscripciones.size(); i++) {
+        for(int i = 0; i < suscripciones.size(); i++) {
             Suscripcion suscripcion = suscripciones.get(i);
-
-
             System.out.println("El descontado a : "
                     + suscripcion.getNombre() + " es: $" + suscripcion.discountToGet() + " tipo de suscripcion " +
                     suscripcion.tipo);
         }
+        System.out.println("*****************************");
     }
 }
