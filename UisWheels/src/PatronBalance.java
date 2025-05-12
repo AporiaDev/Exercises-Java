@@ -1,4 +1,4 @@
 public interface PatronBalance {
-    void agregarSuscripcion();
+    void agregarSuscripcion(Suscripcion suscripcion);
     void imprimirListaSuscripcion();
 }

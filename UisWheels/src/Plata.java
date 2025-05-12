@@ -2,12 +2,13 @@ public class Plata extends Suscripcion{
 
     public Plata(String nombre,
                  String apellido,
-                 double valueSuscription,
-                 Tipo tipo) {
+                 double valueSuscription, Tipo plata) {
 
         super(nombre, apellido, valueSuscription);
-        this.tipo=tipo;
+        this.tipo=plata;
+
     }
+
     @Override
     public double discountToGet() {
         double descuento = getValueSuscription() * tipo.getValueDiscount();

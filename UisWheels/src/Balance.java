@@ -9,21 +9,21 @@ public class Balance implements PatronBalance{
         this.nombreMes = nombreMes;
         suscripciones = new ArrayList<>();
     }
+
+    @Override
     public void agregarSuscripcion(Suscripcion suscripcion) {
         suscripciones.add(suscripcion);
     }
-    public void imprimirSuscripcion() {
+    @Override
+    public void imprimirListaSuscripcion() {
         System.out.println("******Balance de" + nombreMes + "******");
         for (int i = 0; i < suscripciones.size(); i++) {
             Suscripcion suscripcion = suscripciones.get(i);
 
-            // Imprimir en formato requerido
+
             System.out.println("El descontado a : "
-                    + suscripcion.getNombre() + " es: $" + suscripcion.getNombre() + " tipo de suscripcion " +
+                    + suscripcion.getNombre() + " es: $" + suscripcion.discountToGet() + " tipo de suscripcion " +
                     suscripcion.tipo);
         }
     }
-
-
-
 }

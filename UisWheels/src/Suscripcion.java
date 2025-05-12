@@ -8,7 +8,7 @@ public abstract class Suscripcion {
     public Suscripcion(String nombre,
                        String apellido,
                        double valueSuscription) {
-        this.nombre = nombre;
+        this.nombre =   nombre;
         this.apellido = apellido;
         this.valueSuscription = valueSuscription;
     }
@@ -31,6 +31,5 @@ public abstract class Suscripcion {
     public void setValueSuscription(double valueSuscription) {
         this.valueSuscription = valueSuscription;
     }
-
     public abstract double discountToGet();
 }

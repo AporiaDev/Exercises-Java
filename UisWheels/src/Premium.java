@@ -2,9 +2,9 @@ public class Premium extends Suscripcion{
 
     public Premium(String nombre,
                    String apellido,
-                   double valueSuscription) {
+                   double valueSuscription, Tipo premium) {
         super(nombre, apellido, valueSuscription);
-        this.tipo = tipo;
+        this.tipo = premium;
 
     }
 
